@@ -1,0 +1,11 @@
+@use "variables";
+@use "mixins";
+
+// Resets and dependencies
+@use "resets/resets";
+
+@use "../../components/palette/palette";
+
+@import "../../components/grid/grid";
+@import "../../components/space/space";
+@import "../../components/texts/texts";

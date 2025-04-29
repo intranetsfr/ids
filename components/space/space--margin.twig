@@ -1,0 +1,20 @@
+<div class="ids-grid">
+	{% for p in sizes %}
+		<div class="ids-cell ids-cell--3-col ids-padding--0">
+			<div class="margin ids-margin--{{p}}">
+				.ids-margin--{{p}}
+			</div>
+		</div>
+	{% endfor %}
+</div>
+<style>
+	.ids-cell {
+		min-height: 0px;
+		background-color: red;
+	}
+	.margin {
+		background-color: green;
+		border: solid 1px black;
+	}
+</style>
+

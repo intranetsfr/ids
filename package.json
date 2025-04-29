@@ -1,0 +1,44 @@
+{
+  "name": "intranets-design-system",
+  "version": "1.0.0",
+  "description": "Intranets Design System",
+  "homepage": "https://github.com/intranetsfr/intranets-design-system#readme",
+  "bugs": {
+    "url": "https://github.com/intranetsfr/intranets-design-system/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/intranetsfr/intranets-design-system.git"
+  },
+  "license": "ISC",
+  "author": "ROTY Jeremy <contact@intranets.fr>",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    
+    "start": "fractal start --sync",
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --config webpack.config.js --watch",
+    "build:all": "npm run build && npm run fractal:build",
+    "clean": "rm -rf dist/ public/js/ public/css/"
+  },
+  "dependencies": {
+    "@frctl/mandelbrot": "^1.10.3",
+    "@frctl/twig": "^1.2.13"
+  },
+  "devDependencies": {
+      "@babel/core": "^7.26.10",
+      "@babel/preset-env": "^7.26.9",
+      "autoprefixer": "^10.4.21",
+      "babel-loader": "^10.0.0",
+      "css-loader": "^7.1.2",
+      "cssnano": "^7.0.6",
+      "mini-css-extract-plugin": "^2.9.2",
+      "postcss-loader": "^8.1.1",
+      "sass": "^1.87.0",
+      "sass-loader": "^16.0.5",
+      "terser-webpack-plugin": "^5.3.14",
+      "webpack": "^5.99.7",
+      "webpack-cli": "^6.0.1"
+  }
+}

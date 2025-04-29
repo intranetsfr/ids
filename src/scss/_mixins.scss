@@ -1,0 +1,40 @@
+@use "sass:meta";
+@mixin margin_padding($size, $attribute: '', $unit: 'px') {
+  $properties: ('margin', 'padding');
+  $directions: ('top', 'bottom', 'left', 'right');
+
+  @each $prop in $properties {
+    // Generate global classes if no attribute is specified
+    @if $attribute == '' {
+      .ids-#{$prop}--#{$size} {
+        #{$prop}: #{$size}#{$unit} !important;
+      }
+    }
+
+    // Generate directional classes
+    @each $dir in $directions {
+      @if $attribute == '' {
+        .ids-#{$prop}-#{$dir}--#{$size} {
+          #{$prop}-#{$dir}: #{$size}#{$unit} !important;
+        }
+      } @else {
+        .ids-#{$prop}-#{$dir}--#{$size}-#{$attribute} {
+          #{$prop}-#{$dir}: #{$size}#{$unit} !important;
+        }
+      }
+    }
+  }
+}
+@mixin text_fs($size, $attribute: '', $unit: 'px') {
+  $font-size: #{$size}#{$unit}; // Construit la valeur de font-size avec l'unité spécifiée
+
+  @if $attribute == '' {
+    .ids-fs--#{$size} {
+      font-size: $font-size;
+    }
+  } @else {
+    .ids-text--#{$size}-#{$attribute} {
+      font-size: $font-size; // Utilise la variable pour la taille de la police
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<div class="ids-grid">
+	{% for li in liste %}
+		<div class="ids-cell ids-cell--3-col">
+			<h4>background {{li}}</h4>
+			{% for v in variation %}
+				<div class="ids-padding--8 ids-color--{{li}}-{{v}}">
+					.ids-color--{{li}}-{{v}}
+				</div>
+			{% endfor %}
+		</div>
+	{% endfor %}
+</div>
+<div class="ids-grid">
+	{% for li in liste %}
+		<div class="ids-cell ids-cell--3-col">
+			<h4>color {{li}}</h4>
+			{% for v in variation %}
+				<div class="ids-padding--8 ids-color-text--{{li}}-{{v}}" style="border: solid 1px grey">
+					.ids-color-text--{{li}}-{{v}}
+				</div>
+			{% endfor %}
+		</div>
+	{% endfor %}
+</div>

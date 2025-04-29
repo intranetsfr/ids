@@ -1,0 +1,33 @@
+@use 'sass:math';
+@use "sass:string";
+@use "color-definitions";
+@use "functions";
+
+
+$animation-curve-fast-out-slow-in: cubic-bezier(0.4, 0, 0.2, 1) !default;
+$animation-curve-linear-out-slow-in: cubic-bezier(0, 0, 0.2, 1) !default;
+$animation-curve-fast-out-linear-in: cubic-bezier(0.4, 0, 1, 1) !default;
+$animation-curve-default: $animation-curve-fast-out-slow-in !default;
+
+$bar-height: 4px !default;
+
+$grid-desktop-columns: 12 !default;
+$grid-desktop-gutter: 16px !default;
+$grid-desktop-margin: 16px !default;
+$grid-desktop-breakpoint: 840px !default;
+
+$grid-tablet-columns: 8 !default;
+$grid-tablet-gutter: $grid-desktop-gutter !default;
+$grid-tablet-margin: $grid-desktop-margin !default;
+$grid-tablet-breakpoint: 480px !default;
+
+$grid-phone-columns: 4 !default;
+$grid-phone-gutter: $grid-desktop-gutter !default;
+$grid-phone-margin: $grid-desktop-margin !default;
+
+$grid-cell-default-columns: $grid-phone-columns !default;
+
+$grid-max-columns: $grid-desktop-columns !default;
+
+$sizes: 0 2 4 6 8 10 12 14 16 18 20 22 24 26 28 32 38 40 42 44 48 50 52 56 60 64 72 84 92;
+$radiused: 0 1 2 3 4 5 6 8 10 12 14 16 18 20 24 28 30 32;
