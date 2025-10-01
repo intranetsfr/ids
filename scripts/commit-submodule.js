@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 function commitSubmodule() {
-  const submodulePath = path.join(__dirname, '../public/');
+  const submodulePath = path.join(__dirname, '../intranets-design-system/');
   
   try {
     // Vérifier si le dossier existe
@@ -50,7 +50,7 @@ function commitSubmodule() {
 
     // Mettre à jour la référence du submodule dans le projet parent
     console.log('🔄 Mise à jour de la référence du submodule...');
-    execSync('git add public', { 
+    execSync('git add intranets-design-system', { 
       cwd: path.dirname(submodulePath),
       stdio: 'inherit'
     });

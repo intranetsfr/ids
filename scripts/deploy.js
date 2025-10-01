@@ -13,7 +13,7 @@ function deploy() {
     execSync(`npm run commit:submodule "${commitMessage}"`, { stdio: 'inherit' });
 
     console.log('🔄 Updating main project...');
-    execSync('git add public', { stdio: 'inherit' });
+    execSync('git add intranets-design-system', { stdio: 'inherit' });
     execSync(`git commit -m "Update submodule reference"`, { stdio: 'inherit' });
     execSync('git push origin main', { stdio: 'inherit' });
 

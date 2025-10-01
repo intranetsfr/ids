@@ -6,7 +6,7 @@ const path = require('path');
 updateSubmodule();
 
 function updateSubmodule() {
-  const submodulePath = path.join(__dirname, '../public/');
+  const submodulePath = path.join(__dirname, '../intranets-design-system/');
   
   try {
     // Vérifier si le dossier existe

@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 function prepareSubmodule() {
-  const submodulePath = path.join(__dirname, '../public/');
+  const submodulePath = path.join(__dirname, '../intranets-design-system/');
   const gitUrl = 'https://github.com/intranetsfr/intranets-design-system'; // Remplacez par l'URL réelle
   
   try {
@@ -26,7 +26,7 @@ function prepareSubmodule() {
       console.log('Submodule préparé avec succès !');
       console.log(`N'oubliez pas de :`);
       console.log(`1. Créer le repository ${gitUrl}`);
-      console.log(`2. Faire un premier commit et push depuis le dossier public/intranets-design-system`);
+      console.log(`2. Faire un premier commit et push depuis le dossier intranets-design-system`);
     } else {
       console.log('Le dossier est déjà un repository Git');
     }

@@ -29,7 +29,7 @@
     "init:submodule": "node scripts/prepare-submodule.js",
     "update:submodule": "node scripts/update-submodule.js",
     "commit:submodule": "node scripts/commit-submodule.js",
-    "clean": "rm -rf public/js/ public/css/",
+    "clean": "rm -rf intranets-design-system/js/ intranets-design-system/css/",
     "deploy": "node scripts/deploy.js"
   },
   "dependencies": {
