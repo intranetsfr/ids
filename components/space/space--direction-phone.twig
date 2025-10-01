@@ -1,0 +1,51 @@
+<h3>Margin Left</h3>
+<div class="ids-grid">
+	{% for p in sizes %}
+		<div class="ids-cell ids-padding--0">
+			<div class="margin ids-margin-left--{{p}}-phone">
+				.ids-margin-left--{{p}}-phone
+			</div>
+		</div>
+	{% endfor %}
+</div>
+<h3>Margin Right</h3>
+<div class="ids-grid">
+	{% for p in sizes %}
+		<div class="ids-cell ids-padding--0">
+			<div class="margin ids-margin-right--{{p}}-phone">
+				.ids-margin-right--{{p}}-phone
+			</div>
+		</div>
+	{% endfor %}
+</div>
+<h3>Margin Top</h3>
+<div class="ids-grid">
+	{% for p in sizes %}
+		<div class="ids-cell ids-padding--0">
+			<div class="margin ids-margin-top--{{p}}-phone">
+				.ids-margin-top--{{p}}-phone
+			</div>
+		</div>
+	{% endfor %}
+</div>
+<h3>Margin Bottom</h3>
+<div class="ids-grid">
+	{% for p in sizes %}
+		<div class="ids-cell ids-padding--0">
+			<div class="margin ids-margin-bottom--{{p}}-phone">
+				.ids-margin-bottom--{{p}}-phone
+			</div>
+		</div>
+	{% endfor %}
+</div>
+<style>
+	.ids-cell {
+		min-height: 0px;
+		background-color: red;
+	}
+	.margin {
+		background-color: green;
+		border: solid 1px black;
+	}
+</style>
+
