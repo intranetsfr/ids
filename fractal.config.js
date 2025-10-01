@@ -46,6 +46,7 @@ fractal.components.set("resources", {
 });
 
 
+
 fractal.web.set("static.path", path.join(__dirname, "public"));
 fractal.docs.set('path', path.join(__dirname, 'docs'));
-fractal.web.set('builder.dest', path.join(__dirname, 'public/intranets-design-system/docs'));
+fractal.web.set('builder.dest', path.join(__dirname, 'public/docs'));

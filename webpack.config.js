@@ -10,8 +10,8 @@ module.exports = {
 
   output: {
     filename: "[name]-ds.min.js",
-    path: path.resolve(__dirname, "public/intranets-design-system/js"),
-    publicPath: "/public/intranets-design-system/js/",
+    path: path.resolve(__dirname, "public/js"),
+    publicPath: "/public/js/",
   },
 
   mode: "production",
