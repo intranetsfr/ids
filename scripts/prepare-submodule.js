@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 function prepareSubmodule() {
-  const submodulePath = path.join(__dirname, '../public/intranets-design-system');
+  const submodulePath = path.join(__dirname, '../public/');
   const gitUrl = 'https://github.com/intranetsfr/intranets-design-system'; // Remplacez par l'URL réelle
   
   try {
