@@ -1,4 +1,4 @@
-[submodule "public/intranets-design-system"]
+[submodule "public/"]
 	path = public/
 	url = https://github.com/intranetsfr/intranets-design-system.git
     branch = main
