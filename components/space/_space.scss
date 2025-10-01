@@ -4,7 +4,9 @@
 // Generate global classes
 @each $size in $sizes {
     @include margin_padding($size);
+    @include rounding($size);
 }
+@include rounding(50, 'circle', '%');
 
 // Generate classes for different screen sizes
 // Phone

@@ -2539,6 +2539,6 @@
   --ids-color--blue-grey-900: rgba(#{list.nth($palette-blue-grey, 10)});
 
   // Couleurs de base
-  --color-black: #{$color-black};
-  --color-white: #{$color-white};
+  --color-black: rgba(#{$color-black});
+  --color-white: rgba(#{$color-white});
 }

@@ -1,5 +1,11 @@
 ---
 title: Intranets Design System
 ---
+---
+subitle: Implementation
+---
+<pre>
 
-This is your index page. You can edit its contents at `docs/01-index.md`
+    &lt;link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"&gt;
+    &lt;link media="all" rel="stylesheet" href="/css/intranets-ds.min.css"/&gt;
+</pre>

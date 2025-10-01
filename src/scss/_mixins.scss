@@ -25,6 +25,23 @@
     }
   }
 }
+
+@mixin rounding($size, $attribute: '', $unit: 'px') {
+  $properties: ('radius');
+
+  @each $prop in $properties {
+    // Generate global classes if no attribute is specified
+    @if $attribute == '' {
+      .ids-#{$prop}--#{$size} {
+        border-#{$prop}: #{$size}#{$unit} !important;
+      }
+    } @else {
+      .ids-#{$prop}--#{$size}-#{$attribute} {
+        border-#{$prop}: #{$size}#{$unit} !important;
+      }
+    }
+  }
+}
 @mixin text_fs($size, $attribute: '', $unit: 'px') {
   $font-size: #{$size}#{$unit}; // Construit la valeur de font-size avec l'unité spécifiée
 
