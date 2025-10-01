@@ -20,15 +20,17 @@
     "css"
   ],
   "scripts": {
-    
     "start": "fractal start --sync",
     "fractal:build": "fractal build",
     "build": "webpack --config webpack.config.js",
     "watch": "webpack --config webpack.config.js --watch",
-    "build:all": "npm run build && npm run fractal:build && npm run update:submodule",
-    "prepare:submodule": "node scripts/prepare-submodule.js",
+    "build:all": "npm run build && npm run fractal:build",
+    "deploy:docs": "npm run build:all && npm run update:submodule",
+    "init:submodule": "node scripts/prepare-submodule.js",
     "update:submodule": "node scripts/update-submodule.js",
-    "clean": "rm -rf public/js/ public/css/"
+    "commit:submodule": "node scripts/commit-submodule.js",
+    "clean": "rm -rf public/js/ public/css/",
+    "deploy": "node scripts/deploy.js"
   },
   "dependencies": {
     "@frctl/mandelbrot": "^1.10.3",

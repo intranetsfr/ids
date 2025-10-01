@@ -33,7 +33,7 @@
       font-size: $font-size;
     }
   } @else {
-    .ids-text--#{$size}-#{$attribute} {
+    .ids-fs--#{$size}-#{$attribute} {
       font-size: $font-size; // Utilise la variable pour la taille de la police
     }
   }

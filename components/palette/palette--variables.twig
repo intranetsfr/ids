@@ -1,0 +1,15 @@
+<div class="ids-grid">
+	{% for li in liste %}
+		<div class="ids-cell ids-cell--3-col">
+			{% for v in variation %}
+				<pre class="ids-padding--8 ids-fs--8 ids-color--{{li}}-{{v}}">
+.class{<br />
+  background-color: var(--ids-color--{{li}}-{{v}});<br />
+  color: var(--ids-color--{{li}}-{{v}});<br />
+  border-color: var(--ids-color--{{li}}-{{v}});<br />
+}
+				</pre>
+			{% endfor %}
+		</div>
+	{% endfor %}
+</div>
