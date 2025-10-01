@@ -380,7 +380,7 @@ input[type="button"]:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover {
 	background-color: var(--color-secondary);
-	transform: translateY(10px);
+	color: var(--color-primary);
 }
 
 button:focus,
@@ -515,5 +515,9 @@ caption {
 	color: var(--color-primary);
 	caption-side: bottom;
 	text-align: left;
-}</style>{% include "./components/buttons.twig" %}{% include "./components/checkbox.twig" %}{% include "./components/fieldset.twig" %}{% include "./components/table.twig" %}
-
+}</style>
+{% include "./components/sidenav.twig" %}
+{% include "./components/buttons.twig" %}
+{% include "./components/checkbox.twig" %}
+{% include "./components/fieldset.twig" %}
+{% include "./components/table.twig" %}

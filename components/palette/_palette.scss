@@ -2225,26 +2225,22 @@
   background-color: (var(--ids-color--blue-grey-900)) !important;
 }
 
-// Black
-
 .ids-color--black {
-  background-color: rgba(var($color-black)) !important;
+  background-color: #000000 !important; // Ou utiliser rgb(0, 0, 0)
 }
 
 .ids-color-text--black {
-  color: rgba(var($color-black)) !important;
+  color: #000000 !important;
 }
 
 // White
-
 .ids-color--white {
-  background-color: rgba(var($color-white)) !important;
+  background-color: #ffffff !important;
 }
 
 .ids-color-text--white {
-  color: rgba(var($color-white)) !important;
+  color: #ffffff !important;
 }
-
 :root {
   // Palette Red
   --ids-color--red-50: rgba(#{list.nth($palette-red, 1)});
