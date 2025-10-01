@@ -27,6 +27,7 @@
     "watch": "webpack --config webpack.config.js --watch",
     "build:all": "npm run build && npm run fractal:build && npm run prepare:submodule",
     "prepare:submodule": "node scripts/prepare-submodule.js",
+    "update:submodule": "cd public/intranets-design-system && git add . && git commit -m \"Build update\" && git push origin main",
     "clean": "rm -rf dist/ public/js/ public/css/"
   },
   "dependencies": {
