@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +9,14 @@
     <title>Preview Layout</title>
 </head>
 <body>
-{{ yield }}
+<style>
+.test{
+  background-color: var(--palette-blue-700);
+}
+</style>
+<div class="test">This text should be blue.</div>
+
+
   <script src="/js/intranets-ds.min.js"></script>
 </body>
 </html>
