@@ -6,4 +6,6 @@
 
     &lt;link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"&gt;
     &lt;link media="all" rel="stylesheet" href="/css/intranets-ds.min.css"/&gt;
+    <br />
+    &lt;script type="text/javascript" src="https://ids.intranets.fr/js/intranets-ds.min.js">&lt/script&gt;
 </pre>
