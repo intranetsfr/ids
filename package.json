@@ -25,7 +25,8 @@
     "fractal:build": "fractal build",
     "build": "webpack --config webpack.config.js",
     "watch": "webpack --config webpack.config.js --watch",
-    "build:all": "npm run build && npm run fractal:build",
+    "build:all": "npm run build && npm run fractal:build && npm run prepare:submodule",
+    "prepare:submodule": "node scripts/prepare-submodule.js",
     "clean": "rm -rf dist/ public/js/ public/css/"
   },
   "dependencies": {
