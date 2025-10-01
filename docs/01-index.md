@@ -1,9 +1,7 @@
----
-title: Intranets Design System
----
----
-subitle: Implementation
----
+<h1>Intranets Design System</h1>
+
+<h2>Implementation</h2>
+
 <pre>
 
     &lt;link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"&gt;
