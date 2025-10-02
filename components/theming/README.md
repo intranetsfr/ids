@@ -1,4 +1,5 @@
 <pre>
+
 :root
 {
 	/* Couleurs primaires */
@@ -380,7 +381,7 @@ input[type="button"]:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover {
 	background-color: var(--color-secondary);
-	transform: translateY(10px);
+	color: var(--color-primary);
 }
 
 button:focus,
