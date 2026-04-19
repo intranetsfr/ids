@@ -1,4 +1,27 @@
-title: Text
+title: Textes
+status: ready
 context:
-    text: This is an example component!
-    sizes: [8,10,12,14,16,18,20,22,24,26,28,32,38,40,42,44,48,50,52,56,60,64,72,84,92]
+    sizes: [8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 32, 38, 40, 42, 44, 48, 50, 52, 56, 60, 64, 72, 84, 92]
+notes: |
+  ## Typographie — font-size
+
+  Classes utilitaires de taille de police, disponibles en version responsive.
+
+  ### Utilisation
+
+  ```html
+  <!-- Global -->
+  <span class="ids-fs--16">Texte 16px</span>
+  <p class="ids-fs--14">Paragraphe 14px</p>
+
+  <!-- Responsive -->
+  <h1 class="ids-fs--32 ids-fs--24-tablet ids-fs--18-phone">Titre adaptatif</h1>
+  ```
+
+  ### Pattern de nommage
+  - `.ids-fs--{taille}` — appliqué à tous les breakpoints
+  - `.ids-fs--{taille}-desktop` — desktop uniquement (≥ 840px)
+  - `.ids-fs--{taille}-tablet` — tablette uniquement (480px–839px)
+  - `.ids-fs--{taille}-phone` — mobile uniquement (< 480px)
+
+  **Valeurs disponibles** : 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 32, 38, 40, 42, 44, 48, 50, 52, 56, 60, 64, 72, 84, 92 (px)

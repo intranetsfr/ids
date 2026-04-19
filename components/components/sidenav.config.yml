@@ -1,0 +1,45 @@
+title: Sidenav
+status: ready
+notes: |
+  ## Sidenav (Navigation latérale)
+
+  Panneau de navigation latérale animé via CSS (transform), contrôlé par `aria-hidden`.
+
+  ### Structure HTML
+
+  ```html
+  <sidenav>
+    <drawer aria-hidden="true" class="ids-color--grey-100">
+      <button type="button" data-target="slide-out">
+        <span class="material-symbols-outlined">close</span>
+        Fermer
+      </button>
+      <!-- contenu du drawer -->
+    </drawer>
+    <div>
+      <button type="button" data-target="slide-out">
+        <span class="material-symbols-outlined">menu</span>
+        Ouvrir
+      </button>
+      <!-- contenu principal -->
+    </div>
+  </sidenav>
+  ```
+
+  ### Comportement
+  - Le drawer est **fermé par défaut** (`aria-hidden="true"`)
+  - Tout bouton `[data-target="slide-out"]` bascule l'état
+  - L'animation de slide est gérée en CSS via `transform: translateX()`
+
+  ### Variables CSS utiles
+
+  ```css
+  sidenav drawer {
+    width: 250px;          /* largeur du drawer */
+    z-index: 1000;
+  }
+  ```
+
+  ### Accessibilité
+  - `aria-hidden` est mis à jour dynamiquement par le JS.
+  - Prévoir un bouton de fermeture visible à l'intérieur du drawer.

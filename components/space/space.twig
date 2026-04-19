@@ -1,0 +1,49 @@
+<h2 class="ids-fs--20 ids-margin-bottom--16">Espacement — Vue d'ensemble</h2>
+
+<h3 class="ids-fs--16 ids-margin-bottom--8">Margin</h3>
+<div class="ids-grid ids-grid--no-spacing">
+    {% for p in [0, 8, 16, 24, 32] %}
+    <div class="ids-cell ids-cell--2-col ids-padding--4">
+        <div style="background:red; min-height:8px;">
+            <div style="background:green;" class="ids-margin--{{p}} ids-fs--12 ids-padding--4">
+                .ids-margin--{{p}}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<h3 class="ids-fs--16 ids-margin-top--24 ids-margin-bottom--8">Padding</h3>
+<div class="ids-grid ids-grid--no-spacing">
+    {% for p in [0, 8, 16, 24, 32] %}
+    <div class="ids-cell ids-cell--2-col ids-padding--4">
+        <div style="background:green; border:1px solid black;" class="ids-padding--{{p}} ids-fs--12">
+            .ids-padding--{{p}}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<h3 class="ids-fs--16 ids-margin-top--24 ids-margin-bottom--8">Gap (flex)</h3>
+<div class="ids-grid ids-gap--16 ids-grid--no-spacing" style="background:#eee;">
+    <div class="ids-cell ids-cell--4-col" style="background:#BDBDBD; height:40px;"></div>
+    <div class="ids-cell ids-cell--4-col" style="background:#BDBDBD; height:40px;"></div>
+    <div class="ids-cell ids-cell--4-col" style="background:#BDBDBD; height:40px;"></div>
+</div>
+<p class="ids-fs--12 ids-margin-top--4">.ids-gap--16 sur .ids-grid</p>
+
+<h3 class="ids-fs--16 ids-margin-top--24 ids-margin-bottom--8">Border radius</h3>
+<div class="ids-grid ids-grid--no-spacing">
+    {% for r in [0, 4, 8, 16, 32] %}
+    <div class="ids-cell ids-cell--2-col ids-padding--8">
+        <div class="ids-radius--{{r}} ids-padding--12 ids-fs--12" style="background:#BDBDBD;">
+            .ids-radius--{{r}}
+        </div>
+    </div>
+    {% endfor %}
+    <div class="ids-cell ids-cell--2-col ids-padding--8">
+        <div class="ids-radius--50-circle ids-padding--12 ids-fs--12" style="background:#BDBDBD; width:60px; height:60px; display:flex; align-items:center; justify-content:center;">
+            50%
+        </div>
+    </div>
+</div>

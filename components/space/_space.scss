@@ -1,17 +1,27 @@
 @use '../../src/scss/variables';
 @use '../../src/scss/mixins';
 
-// Generate global classes
+// Margin / Padding
 @each $size in variables.$sizes {
     @include mixins.margin_padding($size);
+}
+
+// Border radius — uses the dedicated $radiused scale (not $sizes)
+@each $size in variables.$radiused {
     @include mixins.rounding($size);
 }
 @include mixins.rounding(50, 'circle', '%');
+
+// Gap
+@each $size in variables.$sizes {
+    @include mixins.gap($size);
+}
 
 // Phone
 @media (max-width: #{variables.$grid-tablet-breakpoint - 1}) {
     @each $size in variables.$sizes {
         @include mixins.margin_padding($size, "phone");
+        @include mixins.gap($size, "phone");
     }
 }
 
@@ -19,6 +29,7 @@
 @media (min-width: variables.$grid-tablet-breakpoint) and (max-width: #{variables.$grid-desktop-breakpoint - 1}) {
     @each $size in variables.$sizes {
         @include mixins.margin_padding($size, "tablet");
+        @include mixins.gap($size, "tablet");
     }
 }
 
@@ -26,5 +37,6 @@
 @media (min-width: variables.$grid-desktop-breakpoint) {
     @each $size in variables.$sizes {
         @include mixins.margin_padding($size, "desktop");
+        @include mixins.gap($size, "desktop");
     }
 }

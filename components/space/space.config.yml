@@ -1,4 +1,49 @@
 title: Space
+status: ready
 context:
     sizes: [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 32, 38, 40, 42, 44, 48, 50, 52, 56, 60, 64, 72, 84, 92]
-    
+    radiused: [0, 1, 2, 3, 4, 5, 6, 8, 10, 12, 14, 16, 18, 20, 24, 28, 30, 32]
+notes: |
+  ## Espacement (Space)
+
+  Classes utilitaires de **margin**, **padding**, **gap** et **border-radius**, toutes disponibles en version responsive.
+
+  ### Margin & Padding
+
+  ```html
+  <!-- Global -->
+  <div class="ids-margin--16">margin: 16px</div>
+  <div class="ids-padding--8">padding: 8px</div>
+
+  <!-- Directionnel -->
+  <div class="ids-margin-top--16">margin-top: 16px</div>
+  <div class="ids-padding-left--8">padding-left: 8px</div>
+  <!-- directions : top, bottom, left, right -->
+
+  <!-- Responsive -->
+  <div class="ids-margin--16-desktop">margin: 16px sur desktop uniquement</div>
+  <div class="ids-padding--8-tablet">padding: 8px sur tablette uniquement</div>
+  <div class="ids-margin-top--4-phone">margin-top: 4px sur mobile uniquement</div>
+  ```
+
+  **Valeurs disponibles** : 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 32, 38, 40, 42, 44, 48, 50, 52, 56, 60, 64, 72, 84, 92 (px)
+
+  ### Gap (flex / grid)
+
+  ```html
+  <div class="ids-grid ids-gap--16">gap: 16px entre les cellules</div>
+  <div class="ids-gap-row--8">row-gap: 8px</div>
+  <div class="ids-gap-col--8">column-gap: 8px</div>
+
+  <!-- Responsive -->
+  <div class="ids-gap--8-phone ids-gap--16-desktop"></div>
+  ```
+
+  ### Border radius
+
+  ```html
+  <div class="ids-radius--4">border-radius: 4px</div>
+  <div class="ids-radius--50-circle">border-radius: 50% (cercle)</div>
+  ```
+
+  **Valeurs disponibles** : 0, 1, 2, 3, 4, 5, 6, 8, 10, 12, 14, 16, 18, 20, 24, 28, 30, 32 (px)

@@ -1,0 +1,29 @@
+<h3>Gap global</h3>
+<div class="ids-grid ids-grid--no-spacing">
+    {% for p in sizes %}
+    <div class="ids-cell ids-cell--3-col ids-padding--4">
+        <div class="ids-grid ids-gap--{{p}} ids-grid--no-spacing" style="background:#eee;">
+            <div class="ids-cell ids-cell--6-col" style="background:#BDBDBD; height:24px;"></div>
+            <div class="ids-cell ids-cell--6-col" style="background:#BDBDBD; height:24px;"></div>
+        </div>
+        <p class="ids-fs--10 ids-margin-top--4">.ids-gap--{{p}}</p>
+    </div>
+    {% endfor %}
+</div>
+
+<h3 class="ids-margin-top--24">Row-gap</h3>
+<div class="ids-grid ids-grid--no-spacing">
+    {% for p in [0, 8, 16, 24, 32] %}
+    <div class="ids-cell ids-cell--2-col ids-padding--4">
+        <div class="ids-grid ids-gap-row--{{p}} ids-grid--no-spacing" style="background:#eee; flex-wrap:wrap;">
+            <div class="ids-cell ids-cell--12-col" style="background:#BDBDBD; height:16px;"></div>
+            <div class="ids-cell ids-cell--12-col" style="background:#BDBDBD; height:16px;"></div>
+        </div>
+        <p class="ids-fs--10 ids-margin-top--4">.ids-gap-row--{{p}}</p>
+    </div>
+    {% endfor %}
+</div>
+
+<style>
+.ids-cell { box-sizing: border-box; }
+</style>

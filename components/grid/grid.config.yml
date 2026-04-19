@@ -1,3 +1,49 @@
-title: Example component
-context:
-    text: This is an example component!
+title: Grid
+status: ready
+notes: |
+  ## Système de grille
+
+  Le grid IDS est basé sur **flexbox** avec 3 breakpoints.
+
+  | Breakpoint | Colonnes | Gutter | Largeur min |
+  |---|---|---|---|
+  | Phone | 4 | 16px | — |
+  | Tablet | 8 | 16px | 480px |
+  | Desktop | 12 | 16px | 840px |
+
+  ### Utilisation
+
+  ```html
+  <!-- Grille de base -->
+  <div class="ids-grid">
+    <div class="ids-cell ids-cell--6-col">6 colonnes</div>
+    <div class="ids-cell ids-cell--6-col">6 colonnes</div>
+  </div>
+
+  <!-- Taille responsive par breakpoint -->
+  <div class="ids-cell ids-cell--6-col ids-cell--8-col-tablet ids-cell--4-col-phone"></div>
+
+  <!-- Grille sans espacement -->
+  <div class="ids-grid ids-grid--no-spacing"></div>
+
+  <!-- Masquage responsive -->
+  <div class="ids-cell ids-cell--hide-desktop">Masqué sur desktop</div>
+  <div class="ids-cell ids-cell--hide-tablet">Masqué sur tablette</div>
+  <div class="ids-cell ids-cell--hide-phone">Masqué sur mobile</div>
+
+  <!-- Offset -->
+  <div class="ids-cell ids-cell--2-offset-desktop ids-cell--8-col-desktop"></div>
+
+  <!-- Alignement vertical -->
+  <div class="ids-cell ids-cell--top">haut</div>
+  <div class="ids-cell ids-cell--middle">milieu</div>
+  <div class="ids-cell ids-cell--bottom">bas</div>
+  ```
+
+  ### Pattern de nommage
+  - `.ids-cell--{n}-col` — taille globale (tous breakpoints)
+  - `.ids-cell--{n}-col-desktop` — desktop uniquement
+  - `.ids-cell--{n}-col-tablet` — tablette uniquement
+  - `.ids-cell--{n}-col-phone` — mobile uniquement
+  - `.ids-cell--{n}-offset` / `.ids-cell--{n}-offset-desktop` — décalage
+  - `.ids-cell--order-{n}` — ordre flex

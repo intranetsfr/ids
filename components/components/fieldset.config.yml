@@ -1,0 +1,44 @@
+title: Formulaire (Fieldset)
+status: ready
+notes: |
+  ## Formulaire — Fieldset
+
+  Exemple de formulaire complet utilisant les éléments natifs stylisés par le theming IDS.
+
+  ### Éléments supportés
+
+  - `<fieldset>` / `<legend>`
+  - `<input>` (text, checkbox, radio)
+  - `<select>` / `<option>`
+  - `<textarea>`
+  - `<button>`
+
+  ### Utilisation
+
+  ```html
+  <fieldset class="ids-radius--8 ids-padding--16 ids-margin--16">
+    <legend class="ids-fs--18 ids-margin-left--8">Titre</legend>
+
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom" class="ids-radius--4" />
+
+    <label>
+      <input type="checkbox" name="accept" />
+      J'accepte les conditions
+    </label>
+
+    <label>
+      <input type="radio" name="choix" value="a" /> Option A
+    </label>
+    <label>
+      <input type="radio" name="choix" value="b" /> Option B
+    </label>
+
+    <button type="submit" class="ids-radius--4">Envoyer</button>
+  </fieldset>
+  ```
+
+  ### Accessibilité
+  - Associer chaque `<input>` à un `<label>` via `for` / `id`.
+  - Grouper les radios et checkboxes dans un `<fieldset>` avec `<legend>`.
+  - Les états `disabled` sont gérés nativement par le theming.

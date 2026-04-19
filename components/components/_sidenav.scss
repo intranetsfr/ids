@@ -1,0 +1,20 @@
+sidenav {
+    display: block;
+}
+
+sidenav drawer {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transform: translateX(-100%);
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+sidenav drawer[aria-hidden="false"] {
+    transform: translateX(0);
+}

@@ -41,6 +41,30 @@
     }
   }
 }
+@mixin gap($size, $attribute: '', $unit: 'px') {
+  @if $attribute == '' {
+    .ids-gap--#{$size} {
+      gap: #{$size}#{$unit} !important;
+    }
+    .ids-gap-row--#{$size} {
+      row-gap: #{$size}#{$unit} !important;
+    }
+    .ids-gap-col--#{$size} {
+      column-gap: #{$size}#{$unit} !important;
+    }
+  } @else {
+    .ids-gap--#{$size}-#{$attribute} {
+      gap: #{$size}#{$unit} !important;
+    }
+    .ids-gap-row--#{$size}-#{$attribute} {
+      row-gap: #{$size}#{$unit} !important;
+    }
+    .ids-gap-col--#{$size}-#{$attribute} {
+      column-gap: #{$size}#{$unit} !important;
+    }
+  }
+}
+
 @mixin text_fs($size, $attribute: '', $unit: 'px') {
   $font-size: #{$size}#{$unit}; // Construit la valeur de font-size avec l'unité spécifiée
 

@@ -1,0 +1,36 @@
+title: Boutons
+status: ready
+notes: |
+  ## Boutons
+
+  Le IDS ne fournit pas de classes `.ids-button--*` dédiées : les boutons sont stylisés via le **theming** (`theming.twig`) sur les éléments natifs `<button>`, et enrichis avec les classes utilitaires existantes.
+
+  ### Variantes
+
+  ```html
+  <!-- Bouton standard -->
+  <button class="ids-radius--8 ids-fs--16">Label</button>
+
+  <!-- Bouton icône -->
+  <button class="ids-radius--8" aria-label="Description">
+    <span class="material-symbols-outlined ids-fs--24">favorite</span>
+  </button>
+
+  <!-- Bouton désactivé -->
+  <button disabled>Désactivé</button>
+  ```
+
+  ### Personnalisation via theming
+
+  Les couleurs de fond, de texte et les états (hover, focus, disabled) sont contrôlés par les variables CSS du thème :
+
+  ```css
+  :root {
+    --color-primary: var(--ids-color--indigo-A700);
+    --color-secondary: var(--ids-color--indigo-A100);
+  }
+  ```
+
+  ### Accessibilité
+  - Toujours fournir un `aria-label` sur les boutons icônes.
+  - L'attribut `disabled` suffit — pas besoin de classe `.disabled`.

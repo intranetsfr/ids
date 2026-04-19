@@ -23,7 +23,7 @@ const myCustomisedTheme = mandelbrot({
 // tell Fractal to use the configured theme by default
 fractal.web.theme(myCustomisedTheme);
 fractal.set("project.title", "Intranets Design System");
-fractal.set("project.version", "v1.0");
+fractal.set("project.version", "v2.0");
 fractal.set("project.author", "ROTY Jeremy");
 fractal.set("project.email", "rotyjeremy@gmail.com");
 fractal.set(

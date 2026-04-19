@@ -1,5 +1,46 @@
 title: Palette
+status: ready
 context:
-    text: This is an example component!
     variation: [50, 100, 200, 300, 400, 500, 600, 700, 800, 900]
-    liste: ["red", "pink", "purple", "deep-purple", "indigo", "blue", "light-blue", "cyan", "teal", "green", "light-green", "lime", "yellow", "amber", "orange", "deep-orange", "brown", "grey", "blue-grey"]
+    variation_accent: ["A100", "A200", "A400", "A700"]
+    liste: ["red", "pink", "purple", "deep-purple", "indigo", "blue", "light-blue", "cyan", "teal", "green", "light-green", "lime", "yellow", "amber", "orange", "deep-orange"]
+    liste_neutral: ["brown", "grey", "blue-grey"]
+notes: |
+  ## Palette de couleurs
+
+  Le IDS expose une palette Material Design complète via des **CSS custom properties** et des **classes utilitaires**.
+
+  ### CSS custom properties
+
+  Toutes les couleurs sont disponibles en tant que variables CSS dans `:root` :
+
+  ```css
+  --ids-color--{nom}-{teinte}
+  ```
+
+  Exemple : `var(--ids-color--indigo-500)`, `var(--ids-color--red-A200)`
+
+  Utilisez ces variables dans votre thème pour rester synchronisé avec la palette.
+
+  ### Classes de fond
+
+  ```html
+  <div class="ids-color--blue-500">Fond bleu 500</div>
+  <div class="ids-color--blue">Raccourci → teinte 500</div>
+  <div class="ids-color--black">Fond noir</div>
+  <div class="ids-color--white">Fond blanc</div>
+  ```
+
+  ### Classes de texte
+
+  ```html
+  <span class="ids-color-text--red-700">Texte rouge 700</span>
+  <span class="ids-color-text--red">Raccourci → teinte 500</span>
+  ```
+
+  ### Teintes disponibles
+  - **Standard** : 50, 100, 200, 300, 400, 500, 600, 700, 800, 900
+  - **Accent** (hors brown, grey, blue-grey) : A100, A200, A400, A700
+
+  ### Couleurs neutres
+  `brown`, `grey`, `blue-grey` — teintes 50–900 uniquement.

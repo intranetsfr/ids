@@ -1,0 +1,46 @@
+title: Tableau
+status: ready
+notes: |
+  ## Tableau
+
+  Les tableaux sont stylisés via le theming IDS sur les éléments natifs `<table>`.
+
+  ### Structure
+
+  ```html
+  <table>
+    <caption>Description optionnelle (affichée en bas)</caption>
+    <thead>
+      <tr>
+        <th>Colonne 1</th>
+        <th>Colonne 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Valeur</td>
+        <td>Valeur</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2">Pied de tableau</td>
+      </tr>
+    </tfoot>
+  </table>
+  ```
+
+  ### Styles appliqués par le theming
+  - En-têtes (`<th>`) : fond `--color-secondary`, texte `--color-primary`
+  - Séparateur de lignes : `border-bottom: 1px solid --color-primary`
+  - Survol des lignes : fond `--color-secondary`
+  - `border-collapse: collapse` appliqué par défaut
+
+  ### Enrichissement via utilitaires
+
+  ```html
+  <!-- Tableau avec padding ajusté -->
+  <table class="ids-margin--16">
+    ...
+  </table>
+  ```
