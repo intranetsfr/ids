@@ -1,28 +1,28 @@
-@use '../../src/scss/variables'; // Import global variables with namespace
-@use '../../src/scss/mixins'; // Import mixins including `text_fs`
+@use '../../src/scss/variables';
+@use '../../src/scss/mixins';
 
 // Generate global classes applicable to all sizes
-@each $size in $sizes {
-    @include text_fs($size);
+@each $size in variables.$sizes {
+    @include mixins.text_fs($size);
 }
 
 // Responsive typography for phones
-@media (max-width: #{$grid-tablet-breakpoint - 1}) {
-    @each $size in $sizes {
-        @include text_fs($size, 'phone');
+@media (max-width: #{variables.$grid-tablet-breakpoint - 1}) {
+    @each $size in variables.$sizes {
+        @include mixins.text_fs($size, 'phone');
     }
 }
 
 // Responsive typography for tablets
-@media (min-width: $grid-tablet-breakpoint) and (max-width: #{$grid-desktop-breakpoint - 1}) {
-    @each $size in $sizes {
-        @include text_fs($size, 'tablet');
+@media (min-width: variables.$grid-tablet-breakpoint) and (max-width: #{variables.$grid-desktop-breakpoint - 1}) {
+    @each $size in variables.$sizes {
+        @include mixins.text_fs($size, 'tablet');
     }
 }
 
 // Responsive typography for desktops
-@media (min-width: $grid-desktop-breakpoint) {
-    @each $size in $sizes {
-        @include text_fs($size, 'desktop');
+@media (min-width: variables.$grid-desktop-breakpoint) {
+    @each $size in variables.$sizes {
+        @include mixins.text_fs($size, 'desktop');
     }
 }
