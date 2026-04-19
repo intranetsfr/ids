@@ -6,6 +6,6 @@
 
 @use "../../components/palette/palette";
 
-@import "../../components/grid/grid";
-@import "../../components/space/space";
-@import "../../components/texts/texts";
+@use "../../components/grid/grid";
+@use "../../components/space/space";
+@use "../../components/texts/texts";

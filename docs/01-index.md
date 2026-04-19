@@ -3,9 +3,13 @@
 <h2>Implementation</h2>
 
 <pre>
-
-    &lt;link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"&gt;
-    &lt;link media="all" rel="stylesheet" href="/css/intranets-ds.min.css"/&gt;
-    <br />
-    &lt;script type="text/javascript" src="https://ids.intranets.fr/js/intranets-ds.min.js">&lt/script&gt;
+&lt;link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"&gt;
+&lt;link media="all" rel="stylesheet" href="/css/intranets-ds.min.css"/&gt;
+</pre>
+<pre>
+&lt;script type="text/javascript" src="https://ids.intranets.fr/js/intranets-ds.min.js">&lt/script&gt;
+</pre>
+angular.json
+<pre>
+'../node_modules/intranets-design-system/css/intranets-ds.min.css',
 </pre>
